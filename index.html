@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <h1 class="name">Unit Converter</h1>
+        <div class="navbar">
+           <a href="#temp">Temperature</a>
+           <a href="#wgt">Weight</a>
+           <a href="#distance">Distance</a>
+        </div>
+    </div>
+
+    <!-- temperature -->
+     <section id="temp">
+        <h1 class="name1"><i class="fa-solid fa-temperature-three-quarters"></i>Temperature Conversion - Celcius to Farenheit</h1>
+        <p class="caption">To convert celsuis to fahrenheit yourself, use this formula replacing the C with your temperature in celsuis: (C × 9/5) + 32.</p>
+        <div class="temperature">
+            <div class="img">
+                <img src="img/temp.jpg">
+            </div>
+                <fieldset class="fieldset">
+                    <legend class ="legend">Temperature</legend>
+                    <label for="celcius">Celsuis:</label><br>
+                    <input type="number" id="celsius"><br><br>
+                    <button class="btn1" onclick="temperature()">Convert</button><br><br>
+                    <button class ="btn1" onclick="reset1()">Reset</button><br><br>
+                    <label for="farenheit">Farenheit:</label><br>
+                    <input type="number" id="farenheit"><br><br>
+                </fieldset>
+            </div>
+         </section>
+
+         <!-- weight -->
+          <section id="wgt">
+            <h1 class="name1"><i class="fa-solid fa-weight-scale"></i> Weight Conversion - Kilograms to Pounds</h1>
+              <p class ="caption"> To convert kilograms to pounds yourself, use this formula replacing the kg with your weight in kilograms: kg X 2.205.
+            </p>
+            <div class="weight">
+                <div class="img">
+                   <img src="img/weight.jpg">
+                </div>
+                    <fieldset class="fieldset">
+                        <legend class ="legend">Weight</legend>
+                        <label for ="kgs">Kilograms:</label><br>
+                        <input type="number" id="kgs"><br><br>
+                        <button class="btn2" onclick="weight()">Convert</button><br><br>
+                        <button class ="btn2" onclick="reset2()">Reset</button><br><br>
+                        <label for="pounds">Pounds:</label><br>
+                        <input type="number" id="pds"><br><br>
+                    </fieldset>
+            </div>
+          </section>
+
+          <!-- distance -->
+           <section id="distance">
+            <h1 class="name1"> <i class="fa-solid fa-route"></i> Distance Conversion - Kilometers to Miles</h1>
+            <p class="caption"> To convert kilometers to miles yourself, use this formula replacing the km with your distance in kilmeters: km/1.609.
+            </p>
+            <div class="distance">
+                <div class="img">
+                   <img src="img/dis.jpg">
+                </div>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Distance</legend>
+                        <label for="kgs">Kilometers:</label><br>
+                        <input type="number" id="kms"><br><br>
+                        <button class="btn3" onclick="distance()">Convert</button><br><br>
+                        <button class = "btn3" onclick="reset3()">Reset</button><br><br>
+                        <label for="pounds">Miles:</label><br>
+                        <input type="number" id="ms"><br><br>
+                    </fieldset>
+                </div>
+           </section>
+
+          <!-- footer -->
+          <footer class="footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h2>Essential Links</h2>
+                    <ul class="links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Useful Resources</h2>
+                    <ul class="links">
+                        <li><a href="#">Temperature Conversion</a></li>
+                        <li><a href="#">Weight Conversion</a></li>
+                        <li><a href="#">Distance Conversion</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h2>Follow Us</h2>
+                    <div class="links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025  Conversion Tool. All rights reserved
+            </div>
+          </footer>
+     <script src="script.js"></script>
+</body>
+</html>
